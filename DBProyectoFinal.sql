@@ -95,4 +95,5 @@ CREATE TABLE CarritoDeCompras (
 
 );
 
+Update Productos SET FechaPublicacion = GETDATE();
 
