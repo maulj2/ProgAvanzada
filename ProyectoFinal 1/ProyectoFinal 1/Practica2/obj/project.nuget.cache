@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "ra9O3pXq2mG1CIuf8x1XJVo60L27+1P0q7nl1nG8xO4pDvjaYDHI8bArOrZWNDLozMIRzKiZf166pIx5rEOLLA==",
+  "dgSpecHash": "sV7bcac4zvl3hfs7LghePP8SZ5rSC2P3WyZYVCB4hABGqafVjnNA7C9AMit94N82MkpDNYhH/nQLeTXJ7kZJQw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\maube\\Music\\Progra Avanzada\\ProyectoFinal 1\\ProyectoFinal 1\\Practica2\\ProyectoFinal.csproj",
+  "projectFilePath": "C:\\Users\\maube\\Documents\\GitHub\\ProgAvanzada\\ProyectoFinal 1\\ProyectoFinal 1\\Practica2\\ProyectoFinal.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\maube\\.nuget\\packages\\azure.core\\1.35.0\\azure.core.1.35.0.nupkg.sha512",
     "C:\\Users\\maube\\.nuget\\packages\\azure.identity\\1.10.3\\azure.identity.1.10.3.nupkg.sha512",

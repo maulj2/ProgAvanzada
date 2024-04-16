@@ -11282,11 +11282,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\maube\\Music\\Progra Avanzada\\ProyectoFinal 1\\ProyectoFinal 1\\Practica2\\ProyectoFinal.csproj",
+      "projectUniqueName": "C:\\Users\\maube\\Documents\\GitHub\\ProgAvanzada\\ProyectoFinal 1\\ProyectoFinal 1\\Practica2\\ProyectoFinal.csproj",
       "projectName": "ProyectoFinal",
-      "projectPath": "C:\\Users\\maube\\Music\\Progra Avanzada\\ProyectoFinal 1\\ProyectoFinal 1\\Practica2\\ProyectoFinal.csproj",
+      "projectPath": "C:\\Users\\maube\\Documents\\GitHub\\ProgAvanzada\\ProyectoFinal 1\\ProyectoFinal 1\\Practica2\\ProyectoFinal.csproj",
       "packagesPath": "C:\\Users\\maube\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\maube\\Music\\Progra Avanzada\\ProyectoFinal 1\\ProyectoFinal 1\\Practica2\\obj\\",
+      "outputPath": "C:\\Users\\maube\\Documents\\GitHub\\ProgAvanzada\\ProyectoFinal 1\\ProyectoFinal 1\\Practica2\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\maube\\AppData\\Roaming\\NuGet\\NuGet.Config",
