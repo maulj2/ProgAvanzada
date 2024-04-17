@@ -1,0 +1,37 @@
+﻿@model IEnumerable<ProyectoFinal.Models.Producto>
+
+<p>
+    <a asp-action="ProductoCrear" asp-controller="Productos">Crear nuevo Producto</a>
+</p>
+
+@if (Model != null && Model.Any())
+{
+    <table class="table">
+        <thead>
+            <tr>
+                <th>
+                    @Html.DisplayNameFor(model => model.NombreProducto)
+                </th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.NombreProducto)
+                    </td>
+                    <td>
+                        <a asp-action="ProductoAct" asp-route-id="@item.IdProducto">Editar</a> |
+                        <a asp-action="ProductoDel" asp-route-id="@item.IdProducto">Eliminar</a>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}
+else
+{
+    <p>No hay productos disponibles.</p>
+}

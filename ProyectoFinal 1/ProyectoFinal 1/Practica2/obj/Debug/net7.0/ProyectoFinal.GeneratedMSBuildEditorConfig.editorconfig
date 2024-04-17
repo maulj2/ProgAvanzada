@@ -38,12 +38,20 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTGlzdGFzXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/maube/Documents/GitHub/ProgAvanzada/ProyectoFinal 1/ProyectoFinal 1/Practica2/Views/Productos/ProductoIng.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdG9zXFByb2R1Y3RvSW5nLmNzaHRtbA==
+[C:/Users/maube/Documents/GitHub/ProgAvanzada/ProyectoFinal 1/ProyectoFinal 1/Practica2/Views/Productos/ProductoAct.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdG9zXFByb2R1Y3RvQWN0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/maube/Documents/GitHub/ProgAvanzada/ProyectoFinal 1/ProyectoFinal 1/Practica2/Views/Productos/Productos.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdG9zXFByb2R1Y3Rvcy5jc2h0bWw=
+[C:/Users/maube/Documents/GitHub/ProgAvanzada/ProyectoFinal 1/ProyectoFinal 1/Practica2/Views/Productos/ProductoCrear.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdG9zXFByb2R1Y3RvQ3JlYXIuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/maube/Documents/GitHub/ProgAvanzada/ProyectoFinal 1/ProyectoFinal 1/Practica2/Views/Productos/ProductoDel.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdG9zXFByb2R1Y3RvRGVsLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/maube/Documents/GitHub/ProgAvanzada/ProyectoFinal 1/ProyectoFinal 1/Practica2/Views/Productos/ProductoView.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdG9zXFByb2R1Y3RvVmlldy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/maube/Documents/GitHub/ProgAvanzada/ProyectoFinal 1/ProyectoFinal 1/Practica2/Views/Shared/Error.cshtml]

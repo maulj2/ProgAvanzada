@@ -14,7 +14,6 @@ public class HomeController : Controller
         _logger = logger;
         _usuarioServicio = usuarioServicio;
     }
-    private ProductoDBContext db = new ProductoDBContext();
 
     public async Task<IActionResult> Index()
     {
@@ -36,14 +35,5 @@ public class HomeController : Controller
 
         // Redirigir a la página de inicio de sesión si no está autenticado
         return RedirectToAction("IniciarSesion", "Inicio");
-    }
-
-    public ActionResult Productos()
-    {
-        var Productos = from a in db.Productos
-                        orderby a.IdProducto
-                        select a;
-
-        return View(Productos);
     }
 }

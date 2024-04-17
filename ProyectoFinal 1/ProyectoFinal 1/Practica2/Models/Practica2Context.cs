@@ -15,6 +15,8 @@ public partial class _dbContext : DbContext
     }
 
     public virtual DbSet<Usuario> Usuarios { get; set; }
+    public virtual DbSet<Producto> Productos { get; set; }
+
 
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
     {
@@ -38,6 +40,35 @@ public partial class _dbContext : DbContext
             entity.Property(e => e.NombreUsuario)
                 .HasMaxLength(50)
                 .IsUnicode(false);
+        });
+
+        modelBuilder.Entity<Producto>(entity =>
+        {
+            entity.HasKey(e => e.IdProducto).HasName("PK__Productos__5B65BF9794F6A7D1");
+
+            entity.ToTable("Productos");
+
+            entity.Property(e => e.NombreProducto)
+                .HasMaxLength(255)
+                .IsRequired();
+
+            entity.Property(e => e.Precio)
+                .HasColumnType("decimal(10, 2)")
+                .IsRequired();
+
+            entity.Property(e => e.FechaPublicacion)
+                .HasColumnType("date")
+                .IsRequired();
+
+            entity.Property(e => e.DisponibilidadInventario)
+                .IsRequired();
+
+            entity.Property(e => e.VideoJuegoURL)
+                .HasMaxLength(255);
+
+            entity.Property(e => e.EstadoProducto)
+                .HasMaxLength(50)
+                .IsRequired();
         });
 
 

@@ -1,0 +1,55 @@
+﻿@model ProyectoFinal.Models.Producto
+
+@{
+    ViewData["Title"] = "Actualizar";
+}
+
+<h1>Actualizar</h1>
+
+<h4>Producto</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="ProductoAct">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="IdProducto" />
+            <div class="form-group">
+                <label asp-for="NombreProducto" class="control-label"></label>
+                <input asp-for="NombreProducto" class="form-control" />
+                <span asp-validation-for="NombreProducto" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Precio" class="control-label"></label>
+                <input asp-for="Precio" class="form-control" />
+                <span asp-validation-for="Precio" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="FechaPublicacion" class="control-label"></label>
+                <input asp-for="FechaPublicacion" class="form-control" />
+                <span asp-validation-for="FechaPublicacion" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="DisponibilidadInventario" class="control-label"></label>
+                <input asp-for="DisponibilidadInventario" class="form-control" />
+                <span asp-validation-for="DisponibilidadInventario" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="VideoJuegoURL" class="control-label"></label>
+                <input asp-for="VideoJuegoURL" class="form-control" />
+                <span asp-validation-for="VideoJuegoURL" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="EstadoProducto" class="control-label"></label>
+                <input asp-for="EstadoProducto" class="form-control" />
+                <span asp-validation-for="EstadoProducto" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Guardar" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Volver a la lista</a>
+</div>

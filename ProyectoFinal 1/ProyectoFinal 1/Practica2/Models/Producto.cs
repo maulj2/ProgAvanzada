@@ -15,13 +15,4 @@ namespace ProyectoFinal.Models
         public string? VideoJuegoURL { get; set; }
         public string? EstadoProducto { get; set; }
     }
-    public class ProductoDBContext : DbContext
-    {
-        protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
-        {
-            optionsBuilder.UseSqlServer("server=Ari_s\\SQLEXPRESS;database=TIENDAVIDEOJUEGOS;Trusted_Connection=True;TrustServerCertificate=True;");
-        }
-        public ProductoDBContext() { }
-        public DbSet<Producto> Productos { get; set; }
-    }
 }
