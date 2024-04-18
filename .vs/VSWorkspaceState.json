@@ -4,8 +4,9 @@
     "\\ProyectoFinal 1",
     "\\ProyectoFinal 1\\ProyectoFinal 1",
     "\\ProyectoFinal 1\\ProyectoFinal 1\\Practica2",
-    "\\ProyectoFinal 1\\ProyectoFinal 1\\Practica2\\Controllers"
+    "\\ProyectoFinal 1\\ProyectoFinal 1\\Practica2\\Views",
+    "\\ProyectoFinal 1\\ProyectoFinal 1\\Practica2\\Views\\Home"
   ],
-  "SelectedNode": "\\ProyectoFinal 1\\ProyectoFinal 1\\Practica2\\Controllers\\HomeController.cs",
+  "SelectedNode": "\\ProyectoFinal 1\\ProyectoFinal 1\\Practica2\\Views\\Home\\Index.cshtml",
   "PreviewInSolutionExplorer": false
 }

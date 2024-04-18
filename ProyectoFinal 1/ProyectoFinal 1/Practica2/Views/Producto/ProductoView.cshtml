@@ -1,37 +1,86 @@
 ﻿@model IEnumerable<ProyectoFinal.Models.Producto>
 
-<p>
-    <a asp-action="ProductoCrear" asp-controller="Producto">Crear nuevo Producto</a>
-</p>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lista de Productos</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f9fa;
+            margin: 0;
+            padding: 0;
+        }
 
-@if (Model != null && Model.Any())
-{
-    <table class="table">
-        <thead>
-            <tr>
-                <th>
-                    @Html.DisplayNameFor(model => model.NombreProducto)
-                </th>
-                <th></th>
-            </tr>
-        </thead>
-        <tbody>
-            @foreach (var item in Model)
-            {
-                <tr>
-                    <td>
-                        @Html.DisplayFor(modelItem => item.NombreProducto)
-                    </td>
-                    <td>
-                        <a asp-action="ProductoAct" asp-route-id="@item.IdProducto">Editar</a> |
-                        <a asp-action="ProductoDel" asp-route-id="@item.IdProducto">Eliminar</a>
-                    </td>
-                </tr>
+        .container {
+            margin-top: 50px;
+        }
+
+        h1 {
+            color: #007bff;
+        }
+
+        .table {
+            margin-top: 20px;
+        }
+
+            .table th {
+                background-color: #007bff;
+                color: #fff;
             }
-        </tbody>
-    </table>
-}
-else
-{
-    <p>No hay productos disponibles.</p>
-}
+
+            .table td, .table th {
+                vertical-align: middle;
+            }
+
+        .table-actions a {
+            margin-right: 10px;
+            color: #007bff;
+        }
+
+            .table-actions a:hover {
+                text-decoration: none;
+            }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Lista de Productos</h1>
+
+        <p>
+            <a asp-action="ProductoCrear" asp-controller="Producto" class="btn btn-primary">Crear nuevo Producto</a>
+        </p>
+
+        @if (Model != null && Model.Any())
+        {
+            <table class="table table-striped">
+                <thead>
+                    <tr>
+                        <th>@Html.DisplayNameFor(model => model.First().NombreProducto)</th>
+                        <th>Acciones</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var item in Model)
+                    {
+                        <tr>
+                            <td>@Html.DisplayFor(modelItem => item.NombreProducto)</td>
+                            <td class="table-actions">
+                                <a asp-action="ProductoAct" asp-route-id="@item.IdProducto" class="btn btn-sm btn-primary">Editar</a>
+                                <a asp-action="ProductoDel" asp-route-id="@item.IdProducto" class="btn btn-sm btn-danger" onclick="return confirm('¿Estás seguro de que quieres eliminar este producto?')">Eliminar</a>
+                            </td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        }
+        else
+        {
+            <p>No hay productos disponibles.</p>
+        }
+    </div>
+</body>
+</html>
