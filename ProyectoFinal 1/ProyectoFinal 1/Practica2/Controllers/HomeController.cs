@@ -36,4 +36,6 @@ public class HomeController : Controller
         // Redirigir a la página de inicio de sesión si no está autenticado
         return RedirectToAction("IniciarSesion", "Inicio");
     }
+
+
 }

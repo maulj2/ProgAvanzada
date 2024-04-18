@@ -12,6 +12,7 @@ namespace ProyectoFinal.Controllers
         {
             _context = context;
         }
+
         // Crear
         public IActionResult ProductoCrear()
         {
@@ -36,6 +37,7 @@ namespace ProyectoFinal.Controllers
         {
             return View(await _context.Productos.ToListAsync());
         }
+
 
         // Actualizar
         public async Task<IActionResult> ProductoAct(int? IdProducto)
@@ -80,7 +82,7 @@ namespace ProyectoFinal.Controllers
                         throw;
                     }
                 }
-                return RedirectToAction(nameof(Index));
+                return RedirectToAction(nameof(ProductoView));
             }
             return View(producto);
         }
@@ -110,12 +112,12 @@ namespace ProyectoFinal.Controllers
             var producto = await _context.Productos.FindAsync(IdProducto);
             _context.Productos.Remove(producto);
             await _context.SaveChangesAsync();
-            return RedirectToAction(nameof(Index));
+            return RedirectToAction(nameof(ProductoView));
         }
+
         private bool ProductoExists(int IdProducto)
         {
             return _context.Productos.Any(e => e.IdProducto == IdProducto);
         }
-
     }
 }

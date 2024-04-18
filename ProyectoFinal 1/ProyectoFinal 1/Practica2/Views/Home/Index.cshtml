@@ -18,9 +18,10 @@
     {
         <p>Sin imagen de perfil</p>
     }
+
+    <a asp-action="ProductoView" asp-controller="Producto" class="btn btn-primary">Ver Productos</a>
 }
 else
 {
     <p>No hay un usuario autenticado.</p>
 }
-@Html.ActionLink("Ir a la página de productos", "ProductoView", "Productos", null, new { @class = "btn btn-primary" })
