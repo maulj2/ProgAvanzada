@@ -38,7 +38,7 @@
 
         .table-actions a {
             margin-right: 10px;
-            color: #007bff;
+            color: ghostwhite;
         }
 
             .table-actions a:hover {
@@ -51,7 +51,7 @@
         <h1>Lista de Productos</h1>
 
         <p>
-            <a asp-action="ProductoCrear" asp-controller="Producto" class="btn btn-primary">Crear nuevo Producto</a>
+            <a asp-action="ProductoCrear" asp-controller="Producto" class="btn btn-primary">Crear Nuevo Producto</a>
         </p>
 
         @if (Model != null && Model.Any())
@@ -60,6 +60,11 @@
                 <thead>
                     <tr>
                         <th>@Html.DisplayNameFor(model => model.First().NombreProducto)</th>
+                        <th>@Html.DisplayNameFor(model => model.First().Precio)</th>
+                        <th>@Html.DisplayNameFor(model => model.First().FechaPublicacion)</th>
+                        <th>@Html.DisplayNameFor(model => model.First().DisponibilidadInventario)</th>
+                        <th>@Html.DisplayNameFor(model => model.First().VideoJuegoURL)</th>
+                        <th>@Html.DisplayNameFor(model => model.First().EstadoProducto)</th>
                         <th>Acciones</th>
                     </tr>
                 </thead>
@@ -68,6 +73,11 @@
                     {
                         <tr>
                             <td>@Html.DisplayFor(modelItem => item.NombreProducto)</td>
+                            <td>@Html.DisplayFor(modelItem => item.Precio)</td>
+                            <td>@Html.DisplayFor(modelItem => item.FechaPublicacion)</td>
+                            <td>@Html.DisplayFor(modelItem => item.DisponibilidadInventario)</td>
+                            <td>@Html.DisplayFor(modelItem => item.VideoJuegoURL)</td>
+                            <td>@Html.DisplayFor(modelItem => item.EstadoProducto)</td>
                             <td class="table-actions">
                                 <a asp-action="ProductoAct" asp-route-id="@item.IdProducto" class="btn btn-sm btn-primary">Editar</a>
                                 <a asp-action="ProductoDel" asp-route-id="@item.IdProducto" class="btn btn-sm btn-danger" onclick="return confirm('¿Estás seguro de que quieres eliminar este producto?')">Eliminar</a>

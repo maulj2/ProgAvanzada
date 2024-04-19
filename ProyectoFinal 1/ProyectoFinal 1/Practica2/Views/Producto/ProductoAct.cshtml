@@ -3,53 +3,80 @@
 @{
     ViewData["Title"] = "Actualizar";
 }
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewBag.Title</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f9fa;
+            margin: 0;
+            padding: 0;
+        }
 
-<h1>Actualizar</h1>
+        .container {
+            margin-top: 50px;
+        }
 
-<h4>Producto</h4>
-<hr />
-<div class="row">
-    <div class="col-md-4">
-        <form asp-action="ProductoAct">
-            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
-            <input type="hidden" asp-for="IdProducto" />
-            <div class="form-group">
-                <label asp-for="NombreProducto" class="control-label"></label>
-                <input asp-for="NombreProducto" class="form-control" />
-                <span asp-validation-for="NombreProducto" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="Precio" class="control-label"></label>
-                <input asp-for="Precio" class="form-control" />
-                <span asp-validation-for="Precio" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="FechaPublicacion" class="control-label"></label>
-                <input asp-for="FechaPublicacion" class="form-control" />
-                <span asp-validation-for="FechaPublicacion" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="DisponibilidadInventario" class="control-label"></label>
-                <input asp-for="DisponibilidadInventario" class="form-control" />
-                <span asp-validation-for="DisponibilidadInventario" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="VideoJuegoURL" class="control-label"></label>
-                <input asp-for="VideoJuegoURL" class="form-control" />
-                <span asp-validation-for="VideoJuegoURL" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="EstadoProducto" class="control-label"></label>
-                <input asp-for="EstadoProducto" class="form-control" />
-                <span asp-validation-for="EstadoProducto" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <input type="submit" value="Guardar" class="btn btn-primary" />
-            </div>
-        </form>
-    </div>
-</div>
+        h2 {
+            color: #007bff;
+        }
 
-<div>
-    <a asp-action="Index">Volver a la lista</a>
-</div>
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+    </style>
+    </head>
+    <body>
+    <h2>@ViewData["Title"]</h2>
+
+    @using (Html.BeginForm("ProductoAct", "Producto", FormMethod.Post))
+    {
+        @Html.AntiForgeryToken()
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.NombreProducto)
+            @Html.TextBoxFor(model => model.NombreProducto, new { @class = "form-control", required = "required" })
+            @Html.ValidationMessageFor(model => model.NombreProducto, "", new { @class = "text-danger" })
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.Precio)
+            @Html.TextBoxFor(model => model.Precio, new { @class = "form-control", type = "number", step = "0.01", required = "required" })
+            @Html.ValidationMessageFor(model => model.Precio, "", new { @class = "text-danger" })
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.FechaPublicacion)
+            @Html.TextBoxFor(model => model.FechaPublicacion, new { @class = "form-control", type = "date", required = "required" })
+            @Html.ValidationMessageFor(model => model.FechaPublicacion, "", new { @class = "text-danger" })
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.DisponibilidadInventario)
+            @Html.TextBoxFor(model => model.DisponibilidadInventario, new { @class = "form-control", type = "number", required = "required" })
+            @Html.ValidationMessageFor(model => model.DisponibilidadInventario, "", new { @class = "text-danger" })
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.VideoJuegoURL)
+            @Html.TextBoxFor(model => model.VideoJuegoURL, new { @class = "form-control" })
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.EstadoProducto)
+            @Html.DropDownListFor(model => model.EstadoProducto, new SelectList(new[] { "Activo", "Inactivo" }), "-- Seleccione --", new { @class = "form-control", required = "required" })
+            @Html.ValidationMessageFor(model => model.EstadoProducto, "", new { @class = "text-danger" })
+        </div>
+
+        @Html.HiddenFor(model => model.IdProducto) <!-- Necesario para enviar el ID del producto -->
+
+        <button type="submit" class="btn btn-primary">Guardar cambios</button>
+    }
+</body>
+</html>

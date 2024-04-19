@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\rodri\\Source\\Repos\\ProgAvanzada\\ProyectoFinal 1\\ProyectoFinal 1\\Practica2\\ProyectoFinal.csproj": {}
+    "C:\\Users\\maube\\Documents\\GitHub\\ProgAvanzada\\ProyectoFinal 1\\ProyectoFinal 1\\Practica2\\ProyectoFinal.csproj": {}
   },
   "projects": {
-    "C:\\Users\\rodri\\Source\\Repos\\ProgAvanzada\\ProyectoFinal 1\\ProyectoFinal 1\\Practica2\\ProyectoFinal.csproj": {
+    "C:\\Users\\maube\\Documents\\GitHub\\ProgAvanzada\\ProyectoFinal 1\\ProyectoFinal 1\\Practica2\\ProyectoFinal.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\rodri\\Source\\Repos\\ProgAvanzada\\ProyectoFinal 1\\ProyectoFinal 1\\Practica2\\ProyectoFinal.csproj",
+        "projectUniqueName": "C:\\Users\\maube\\Documents\\GitHub\\ProgAvanzada\\ProyectoFinal 1\\ProyectoFinal 1\\Practica2\\ProyectoFinal.csproj",
         "projectName": "ProyectoFinal",
-        "projectPath": "C:\\Users\\rodri\\Source\\Repos\\ProgAvanzada\\ProyectoFinal 1\\ProyectoFinal 1\\Practica2\\ProyectoFinal.csproj",
-        "packagesPath": "C:\\Users\\rodri\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\rodri\\Source\\Repos\\ProgAvanzada\\ProyectoFinal 1\\ProyectoFinal 1\\Practica2\\obj\\",
+        "projectPath": "C:\\Users\\maube\\Documents\\GitHub\\ProgAvanzada\\ProyectoFinal 1\\ProyectoFinal 1\\Practica2\\ProyectoFinal.csproj",
+        "packagesPath": "C:\\Users\\maube\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\maube\\Documents\\GitHub\\ProgAvanzada\\ProyectoFinal 1\\ProyectoFinal 1\\Practica2\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\rodri\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\maube\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -34,6 +34,11 @@
           "warnAsError": [
             "NU1605"
           ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
         }
       },
       "frameworks": {
@@ -66,12 +71,6 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "downloadDependencies": [
-            {
-              "name": "Microsoft.NETCore.App.Host.win-x86",
-              "version": "[7.0.15, 7.0.15]"
-            }
-          ],
           "frameworkReferences": {
             "Microsoft.AspNetCore.App": {
               "privateAssets": "none"
@@ -80,7 +79,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files (x86)\\dotnet\\sdk\\8.0.101\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.204\\RuntimeIdentifierGraph.json"
         }
       }
     }

@@ -7,12 +7,22 @@ namespace ProyectoFinal.Models
     {
         [Key]
         public int IdProducto { get; set; }
-        public string? NombreProducto { get; set; }
-        public decimal Precio { get; set; }
-        public DateTime FechaPublicacion { get; set; }
-        public string? DisponibilidadInventario { get; set; }
 
-        public string? VideoJuegoURL { get; set; }
-        public string? EstadoProducto { get; set; }
+        [Required]
+        public string NombreProducto { get; set; }
+
+        [Required]
+        public decimal Precio { get; set; }
+
+        [Required]
+        public DateTime FechaPublicacion { get; set; }
+
+        [Required]
+        public int DisponibilidadInventario { get; set; }
+
+        public string VideoJuegoURL { get; set; }
+
+        [Required]
+        public string EstadoProducto { get; set; }
     }
 }

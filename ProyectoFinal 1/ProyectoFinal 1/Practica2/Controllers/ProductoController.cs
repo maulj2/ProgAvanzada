@@ -39,15 +39,14 @@ namespace ProyectoFinal.Controllers
         }
 
 
-        // Actualizar
-        public async Task<IActionResult> ProductoAct(int? IdProducto)
+        public async Task<IActionResult> ProductoAct(int? id)
         {
-            if (IdProducto == null)
+            if (id == null)
             {
                 return NotFound();
             }
 
-            var producto = await _context.Productos.FindAsync(IdProducto);
+            var producto = await _context.Productos.FindAsync(id);
             if (producto == null)
             {
                 return NotFound();
@@ -55,11 +54,12 @@ namespace ProyectoFinal.Controllers
             return View(producto);
         }
 
+        // POST: ProductoAct
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> ProductoAct(int IdProducto, [Bind("IdProducto,NombreProducto,Precio,FechaPublicacion,DisponibilidadInventario,VideoJuegoURL,EstadoProducto")] Producto producto)
+        public async Task<IActionResult> ProductoAct(int id, [Bind("IdProducto,NombreProducto,Precio,FechaPublicacion,DisponibilidadInventario,VideoJuegoURL,EstadoProducto")] Producto producto)
         {
-            if (IdProducto != producto.IdProducto)
+            if (id != producto.IdProducto)
             {
                 return NotFound();
             }
@@ -86,6 +86,8 @@ namespace ProyectoFinal.Controllers
             }
             return View(producto);
         }
+
+
 
         // Eliminar
         public async Task<IActionResult> ProductoDel(int? IdProducto)
