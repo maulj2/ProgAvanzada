@@ -11,12 +11,12 @@
       "RelativeMoniker": "D:0:0:{0746BD45-F09D-4E89-ACC5-3A283751F77D}|Practica2\\ProyectoFinal.csproj|solutionrelative:practica2\\views\\producto\\productoview.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0746BD45-F09D-4E89-ACC5-3A283751F77D}|Practica2\\ProyectoFinal.csproj|c:\\users\\maube\\documents\\github\\progavanzada\\proyectofinal 1\\proyectofinal 1\\practica2\\controllers\\productocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0746BD45-F09D-4E89-ACC5-3A283751F77D}|Practica2\\ProyectoFinal.csproj|solutionrelative:practica2\\controllers\\productocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{0746BD45-F09D-4E89-ACC5-3A283751F77D}|Practica2\\ProyectoFinal.csproj|c:\\users\\maube\\documents\\github\\progavanzada\\proyectofinal 1\\proyectofinal 1\\practica2\\views\\producto\\productoact.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{0746BD45-F09D-4E89-ACC5-3A283751F77D}|Practica2\\ProyectoFinal.csproj|solutionrelative:practica2\\views\\producto\\productoact.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0746BD45-F09D-4E89-ACC5-3A283751F77D}|Practica2\\ProyectoFinal.csproj|c:\\users\\maube\\documents\\github\\progavanzada\\proyectofinal 1\\proyectofinal 1\\practica2\\controllers\\productocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0746BD45-F09D-4E89-ACC5-3A283751F77D}|Practica2\\ProyectoFinal.csproj|solutionrelative:practica2\\controllers\\productocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{0746BD45-F09D-4E89-ACC5-3A283751F77D}|Practica2\\ProyectoFinal.csproj|c:\\users\\maube\\documents\\github\\progavanzada\\proyectofinal 1\\proyectofinal 1\\practica2\\views\\producto\\productocrear.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
@@ -76,7 +76,7 @@
               "RelativeDocumentMoniker": "Practica2\\Views\\Producto\\ProductoDel.cshtml",
               "ToolTip": "C:\\Users\\maube\\Documents\\GitHub\\ProgAvanzada\\ProyectoFinal 1\\ProyectoFinal 1\\Practica2\\Views\\Producto\\ProductoDel.cshtml",
               "RelativeToolTip": "Practica2\\Views\\Producto\\ProductoDel.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAA/AAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABMAAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2024-04-19T18:02:48.852Z",
               "EditorCaption": ""
@@ -89,20 +89,20 @@
               "RelativeDocumentMoniker": "Practica2\\Views\\Producto\\ProductoView.cshtml",
               "ToolTip": "C:\\Users\\maube\\Documents\\GitHub\\ProgAvanzada\\ProyectoFinal 1\\ProyectoFinal 1\\Practica2\\Views\\Producto\\ProductoView.cshtml",
               "RelativeToolTip": "Practica2\\Views\\Producto\\ProductoView.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAGAAAAAAAAAA",
+              "ViewState": "AQIAAFoAAAAAAAAAAAAAAFYAAAAhAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2024-04-19T17:06:46.565Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 2,
               "Title": "ProductoAct.cshtml",
               "DocumentMoniker": "C:\\Users\\maube\\Documents\\GitHub\\ProgAvanzada\\ProyectoFinal 1\\ProyectoFinal 1\\Practica2\\Views\\Producto\\ProductoAct.cshtml",
               "RelativeDocumentMoniker": "Practica2\\Views\\Producto\\ProductoAct.cshtml",
               "ToolTip": "C:\\Users\\maube\\Documents\\GitHub\\ProgAvanzada\\ProyectoFinal 1\\ProyectoFinal 1\\Practica2\\Views\\Producto\\ProductoAct.cshtml",
               "RelativeToolTip": "Practica2\\Views\\Producto\\ProductoAct.cshtml",
-              "ViewState": "AQIAADwAAAAAAAAAAAAYwCUAAAAnAAAA",
+              "ViewState": "AQIAAC0AAAAAAAAAAAAYwCUAAAAnAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2024-04-19T16:58:47.568Z",
               "EditorCaption": ""
@@ -117,8 +117,7 @@
               "RelativeToolTip": "Practica2\\Models\\Producto.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAArAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-19T16:57:19.806Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-19T16:57:19.806Z"
             },
             {
               "$type": "Document",
@@ -130,8 +129,7 @@
               "RelativeToolTip": "Practica2\\Models\\Practica2Context.cs",
               "ViewState": "AQIAAA4AAAAAAAAAAAAcwDgAAAAeAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-19T16:38:17.457Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-19T16:38:17.457Z"
             },
             {
               "$type": "Document",
@@ -143,8 +141,7 @@
               "RelativeToolTip": "Practica2\\Views\\Producto\\ProductoCrear.cshtml",
               "ViewState": "AQIAACoAAAAAAAAAAAAAACoAAAAMAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-04-19T16:36:33.097Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-19T16:36:33.097Z"
             },
             {
               "$type": "Document",
@@ -156,12 +153,11 @@
               "RelativeToolTip": "Practica2\\Controllers\\HomeController.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAAAFAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-15T23:02:31.157Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-15T23:02:31.157Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "ProductoController.cs",
               "DocumentMoniker": "C:\\Users\\maube\\Documents\\GitHub\\ProgAvanzada\\ProyectoFinal 1\\ProyectoFinal 1\\Practica2\\Controllers\\ProductoController.cs",
               "RelativeDocumentMoniker": "Practica2\\Controllers\\ProductoController.cs",
@@ -169,8 +165,7 @@
               "RelativeToolTip": "Practica2\\Controllers\\ProductoController.cs",
               "ViewState": "AQIAAE0AAAAAAAAAAAAYwFgAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-17T03:52:08.757Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-17T03:52:08.757Z"
             },
             {
               "$type": "Document",

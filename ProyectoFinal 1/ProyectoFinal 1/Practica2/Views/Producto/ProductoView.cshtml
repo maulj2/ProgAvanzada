@@ -63,7 +63,7 @@
                         <th>@Html.DisplayNameFor(model => model.First().Precio)</th>
                         <th>@Html.DisplayNameFor(model => model.First().FechaPublicacion)</th>
                         <th>@Html.DisplayNameFor(model => model.First().DisponibilidadInventario)</th>
-                        <th>@Html.DisplayNameFor(model => model.First().VideoJuegoURL)</th>
+                        <th>Video</th>
                         <th>@Html.DisplayNameFor(model => model.First().EstadoProducto)</th>
                         <th>Acciones</th>
                     </tr>
@@ -76,7 +76,16 @@
                             <td>@Html.DisplayFor(modelItem => item.Precio)</td>
                             <td>@Html.DisplayFor(modelItem => item.FechaPublicacion)</td>
                             <td>@Html.DisplayFor(modelItem => item.DisponibilidadInventario)</td>
-                            <td>@Html.DisplayFor(modelItem => item.VideoJuegoURL)</td>
+                            <td>
+                                @if (!string.IsNullOrEmpty(item.VideoJuegoURL))
+                                {
+                                    <iframe width="320" height="240" src="@item.VideoJuegoURL" frameborder="0" allowfullscreen></iframe>
+                                }
+                                else
+                                {
+                                    <p>No hay video disponible</p>
+                                }
+                            </td>
                             <td>@Html.DisplayFor(modelItem => item.EstadoProducto)</td>
                             <td class="table-actions">
                                 <a asp-action="ProductoAct" asp-route-id="@item.IdProducto" class="btn btn-sm btn-primary">Editar</a>
