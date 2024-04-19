@@ -89,16 +89,15 @@ namespace ProyectoFinal.Controllers
 
 
 
-        // Eliminar
-        public async Task<IActionResult> ProductoDel(int? IdProducto)
+        // GET: ProductoDel
+        public async Task<IActionResult> ProductoDel(int? id)
         {
-            if (IdProducto == null)
+            if (id == null)
             {
                 return NotFound();
             }
 
-            var producto = await _context.Productos
-                .FirstOrDefaultAsync(m => m.IdProducto == IdProducto);
+            var producto = await _context.Productos.FindAsync(id);
             if (producto == null)
             {
                 return NotFound();
@@ -107,11 +106,17 @@ namespace ProyectoFinal.Controllers
             return View(producto);
         }
 
+        // POST: ProductoDel
         [HttpPost, ActionName("ProductoDel")]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> DeleteConfirmed(int IdProducto)
+        public async Task<IActionResult> ProductoDelConfirmed(int id)
         {
-            var producto = await _context.Productos.FindAsync(IdProducto);
+            var producto = await _context.Productos.FindAsync(id);
+            if (producto == null)
+            {
+                return NotFound();
+            }
+
             _context.Productos.Remove(producto);
             await _context.SaveChangesAsync();
             return RedirectToAction(nameof(ProductoView));
