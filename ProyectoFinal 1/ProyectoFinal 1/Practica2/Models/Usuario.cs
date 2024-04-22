@@ -5,10 +5,11 @@ namespace ProyectoFinal.Models
 {
     public partial class Usuario
     {
-        public int IdUsuario { get; set; }
-        public string? NombreUsuario { get; set; }
-        public string? Correo { get; set; }
-        public string? Clave { get; set; }
-        public byte[]? ImagenPerfil { get; set; } // Nueva propiedad para la imagen de perfil
+        public int IDUsuario { get; set; }
+        public string NombreUsuario { get; set; }
+        public string Correo { get; set; }
+        public string Clave { get; set; }
+        public string EstadoUsuario { get; set; }
+        public byte[] ImagenPerfil { get; set; }
     }
 }

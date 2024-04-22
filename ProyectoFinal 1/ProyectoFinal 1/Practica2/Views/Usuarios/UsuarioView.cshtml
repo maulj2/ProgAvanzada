@@ -1,0 +1,94 @@
+﻿@model IEnumerable<ProyectoFinal.Models.Usuario>
+
+@{
+    ViewData["Title"] = "Lista de Usuarios";
+}
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"]</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <style>
+        /* Estilos CSS */
+        body {
+            background-color: #f8f9fa;
+        }
+
+        .container {
+            margin-top: 50px;
+        }
+
+        h1 {
+            color: #007bff;
+        }
+
+        .btn-secondary {
+            margin-right: 10px;
+        }
+
+        /* Estilos para el footer */
+        footer {
+            background-color: #343a40;
+            color: #ffffff;
+            text-align: center;
+            padding: 20px 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+            footer p {
+                margin: 0;
+            }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Lista de Usuarios</h1>
+
+        <p>
+            <!-- Botón para regresar al index -->
+            <a href="@Url.Action("Index", "Home")" class="btn btn-secondary">Regresar</a>
+        </p>
+
+        @if (Model != null && Model.Any())
+        {
+            <table class="table table-striped">
+                <thead>
+                    <tr>
+                        <th>Nombre de Usuario</th>
+                        <th>Correo</th>
+                        <th>Clave</th>
+                        <th>Acciones</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var usuario in Model)
+                    {
+                        <tr>
+                            <td>@usuario.NombreUsuario</td>
+                            <td>@usuario.Correo</td>
+                            <td>@usuario.EstadoUsuario</td>
+                            <td>
+                                <a asp-action="UsuarioEdit" asp-route-id="@usuario.IDUsuario" class="btn btn-primary">Editar</a>
+                                <a asp-action="UsuarioDel" asp-route-id="@usuario.IDUsuario" class="btn btn-danger">Eliminar</a>
+                            </td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        }
+        else
+        {
+            <p>No hay usuarios disponibles.</p>
+        }
+    </div>
+
+    <footer>
+        <p>Derechos Reservados - Proyecto Estudiantil</p>
+    </footer>
+</body>
+</html>

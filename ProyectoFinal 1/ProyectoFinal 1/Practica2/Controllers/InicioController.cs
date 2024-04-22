@@ -29,6 +29,9 @@ namespace ProyectoFinal.Controllers
         [HttpPost]
         public async Task<IActionResult> Registrarse(Usuario modelo, IFormFile imagenPerfil)
         {
+            // Establecer el estado del usuario como "Activo"
+            modelo.EstadoUsuario = "Activo";
+
             if (imagenPerfil != null && imagenPerfil.Length > 0)
             {
                 using (var memoryStream = new MemoryStream())
@@ -43,7 +46,7 @@ namespace ProyectoFinal.Controllers
 
             Usuario usuario_creado = await _usuarioServicio.SaveUsuario(modelo);
 
-            if (usuario_creado.IdUsuario > 0)
+            if (usuario_creado.IDUsuario > 0)
                 return RedirectToAction("IniciarSesion", "Inicio");
 
             ViewData["Mensaje"] = "No se pudo crear el usuario";
