@@ -1,0 +1,75 @@
+﻿@model List<ProyectoFinal.Models.Producto>
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lista de Productos</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f9fa;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            margin-top: 50px;
+        }
+
+        h1 {
+            color: #007bff;
+        }
+
+        .table {
+            margin-top: 20px;
+        }
+
+            .table th {
+                background-color: #007bff;
+                color: #fff;
+            }
+
+            .table td, .table th {
+                vertical-align: middle;
+            }
+
+        .table-actions a {
+            margin-right: 10px;
+            color: ghostwhite;
+        }
+
+            .table-actions a:hover {
+                text-decoration: none;
+            }
+    </style>
+</head>
+<body>
+    <div class="alert alert-success" role="alert">
+        ¡El siguiente producto se ha agregado al carrito correctamente!
+        <br />
+        @foreach (var producto in Model)
+        {
+            <div>
+                Nombre: @producto.NombreProducto
+                <br />
+                Precio: @producto.Precio
+                <br />
+
+            </div>
+        }
+    </div>
+
+    @if (Model.Any())
+    {
+        <div class="table-actions">
+
+            <a asp-action="_ConfirmarEliminacion" asp-controller="Producto" asp-route-id="@Model.First().IdProducto" class="btn btn-danger">Eliminar Producto</a>
+            <a asp-action="ProductoView" class="btn btn-secondary">Volver a la Lista</a>
+        </div>
+    }
+    </div>
+</body>
+</html>
