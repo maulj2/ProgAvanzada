@@ -20,7 +20,7 @@ public partial class _dbContext : DbContext
 
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
     {
-     optionsBuilder.UseSqlServer("Server=Ari_s\\SQLEXPRESS; DataBase=TIENDAVIDEOJUEGOS; Trusted_Connection=True; TrustServerCertificate=True");
+     optionsBuilder.UseSqlServer("Server=(local)\\SQLEXPRESS01; DataBase=TIENDAVIDEOJUEGOS; Trusted_Connection=True; TrustServerCertificate=True");
     }
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)

@@ -1,13 +1,11 @@
 using Microsoft.EntityFrameworkCore;
 using ProyectoFinal.Models;
-
 using ProyectoFinal.Servicios.Contrato;
 using ProyectoFinal.Servicios.Implementacion;
-
 using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Data.SqlClient;
-
+using Microsoft.AspNetCore.Http;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -37,13 +35,12 @@ builder.Services.AddControllersWithViews(options => {
         );
 });
 
+// Agregar el servicio de sesión
+builder.Services.AddSession();
+
 var app = builder.Build();
 
-// Configure the HTTP request pipeline.
-if (!app.Environment.IsDevelopment())
-{
-    app.UseExceptionHandler("/Home/Error");
-}
+// Habilitar el uso de archivos estáticos (static files)
 app.UseStaticFiles();
 
 app.UseRouting();
@@ -51,6 +48,9 @@ app.UseRouting();
 app.UseAuthentication();
 
 app.UseAuthorization();
+
+// Habilitar el uso de la sesión
+app.UseSession();
 
 app.MapControllerRoute(
     name: "default",

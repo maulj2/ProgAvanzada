@@ -88,6 +88,12 @@
                             </td>
                             <td>@Html.DisplayFor(modelItem => item.EstadoProducto)</td>
                             <td class="table-actions">
+                                <form id="formAgregarAlCarrito-@item.IdProducto" asp-action="AgregarAlCarrito" asp-controller="Producto" method="post">
+                                    <input type="hidden" name="id" value="@item.IdProducto" />
+                                    <button type="submit" class="btn btn-sm btn-success">Agregar al carrito</button>
+                                </form>
+
+   
                                 <a asp-action="ProductoAct" asp-route-id="@item.IdProducto" class="btn btn-sm btn-primary">Editar</a>
                                 <a asp-action="ProductoDel" asp-route-id="@item.IdProducto" class="btn btn-sm btn-danger" onclick="return confirm('¿Estás seguro de que quieres eliminar este producto?')">Eliminar</a>
                             </td>
@@ -101,5 +107,29 @@
             <p>No hay productos disponibles.</p>
         }
     </div>
+
+
+    <script>
+        document.getElementById("formAgregarAlCarrito").addEventListener("submit", function (event) {
+            event.preventDefault(); 
+            // Envía los datos del formulario al servidor usando AJAX
+            var form = this;
+            var formData = new FormData(form);
+
+            fetch(form.action, {
+                method: form.method,
+                body: formData
+            })
+                .then(response => response.text()) 
+                .then(html => {
+
+                    document.getElementById("respuesta").innerHTML = html;
+                })
+                .catch(error => {
+                    console.error('Error:', error);
+                });
+        });
+    </script>
+
 </body>
 </html>

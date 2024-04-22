@@ -1265,3 +1265,4 @@ C:\Users\rodri\Source\Repos\ProgAvanzada\ProyectoFinal 1\ProyectoFinal 1\Practic
 C:\Users\rodri\Source\Repos\ProgAvanzada\ProyectoFinal 1\ProyectoFinal 1\Practica2\obj\Debug\net7.0\ProyectoFinal.pdb
 C:\Users\rodri\Source\Repos\ProgAvanzada\ProyectoFinal 1\ProyectoFinal 1\Practica2\obj\Debug\net7.0\ProyectoFinal.genruntimeconfig.cache
 C:\Users\rodri\Source\Repos\ProgAvanzada\ProyectoFinal 1\ProyectoFinal 1\Practica2\obj\Debug\net7.0\ref\ProyectoFinal.dll
+C:\Users\rodri\Source\Repos\ProgAvanzada\ProyectoFinal 1\ProyectoFinal 1\Practica2\obj\Debug\net7.0\ProyectoFinal.csproj.ResolveComReference.cache

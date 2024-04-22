@@ -9,71 +9,79 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = ProyectoFinal
 build_property.RootNamespace = ProyectoFinal
-build_property.ProjectDir = C:\Users\maube\Documents\GitHub\ProgAvanzada\ProyectoFinal 1\ProyectoFinal 1\Practica2\
+build_property.ProjectDir = C:\Users\rodri\source\repos\ProgAvanzada\ProyectoFinal 1\ProyectoFinal 1\Practica2\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.RazorLangVersion = 7.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\maube\Documents\GitHub\ProgAvanzada\ProyectoFinal 1\ProyectoFinal 1\Practica2
+build_property.MSBuildProjectDirectory = C:\Users\rodri\source\repos\ProgAvanzada\ProyectoFinal 1\ProyectoFinal 1\Practica2
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/maube/Documents/GitHub/ProgAvanzada/ProyectoFinal 1/ProyectoFinal 1/Practica2/Views/Home/Index.cshtml]
+[C:/Users/rodri/source/repos/ProgAvanzada/ProyectoFinal 1/ProyectoFinal 1/Practica2/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/maube/Documents/GitHub/ProgAvanzada/ProyectoFinal 1/ProyectoFinal 1/Practica2/Views/Home/Privacy.cshtml]
+[C:/Users/rodri/source/repos/ProgAvanzada/ProyectoFinal 1/ProyectoFinal 1/Practica2/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/maube/Documents/GitHub/ProgAvanzada/ProyectoFinal 1/ProyectoFinal 1/Practica2/Views/Inicio/IniciarSesion.cshtml]
+[C:/Users/rodri/source/repos/ProgAvanzada/ProyectoFinal 1/ProyectoFinal 1/Practica2/Views/Inicio/IniciarSesion.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSW5pY2lvXEluaWNpYXJTZXNpb24uY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/maube/Documents/GitHub/ProgAvanzada/ProyectoFinal 1/ProyectoFinal 1/Practica2/Views/Inicio/Registrarse.cshtml]
+[C:/Users/rodri/source/repos/ProgAvanzada/ProyectoFinal 1/ProyectoFinal 1/Practica2/Views/Inicio/Registrarse.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSW5pY2lvXFJlZ2lzdHJhcnNlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/maube/Documents/GitHub/ProgAvanzada/ProyectoFinal 1/ProyectoFinal 1/Practica2/Views/Listas/Index.cshtml]
+[C:/Users/rodri/source/repos/ProgAvanzada/ProyectoFinal 1/ProyectoFinal 1/Practica2/Views/Listas/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTGlzdGFzXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/maube/Documents/GitHub/ProgAvanzada/ProyectoFinal 1/ProyectoFinal 1/Practica2/Views/Producto/ProductoAct.cshtml]
+[C:/Users/rodri/source/repos/ProgAvanzada/ProyectoFinal 1/ProyectoFinal 1/Practica2/Views/Producto/ProductoAct.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdG9cUHJvZHVjdG9BY3QuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/maube/Documents/GitHub/ProgAvanzada/ProyectoFinal 1/ProyectoFinal 1/Practica2/Views/Producto/ProductoCrear.cshtml]
+[C:/Users/rodri/source/repos/ProgAvanzada/ProyectoFinal 1/ProyectoFinal 1/Practica2/Views/Producto/ProductoCrear.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdG9cUHJvZHVjdG9DcmVhci5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/maube/Documents/GitHub/ProgAvanzada/ProyectoFinal 1/ProyectoFinal 1/Practica2/Views/Producto/ProductoDel.cshtml]
+[C:/Users/rodri/source/repos/ProgAvanzada/ProyectoFinal 1/ProyectoFinal 1/Practica2/Views/Producto/ProductoDel.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdG9cUHJvZHVjdG9EZWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/maube/Documents/GitHub/ProgAvanzada/ProyectoFinal 1/ProyectoFinal 1/Practica2/Views/Producto/ProductoView.cshtml]
+[C:/Users/rodri/source/repos/ProgAvanzada/ProyectoFinal 1/ProyectoFinal 1/Practica2/Views/Producto/ProductoView.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdG9cUHJvZHVjdG9WaWV3LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/maube/Documents/GitHub/ProgAvanzada/ProyectoFinal 1/ProyectoFinal 1/Practica2/Views/Shared/Error.cshtml]
+[C:/Users/rodri/source/repos/ProgAvanzada/ProyectoFinal 1/ProyectoFinal 1/Practica2/Views/Producto/_Confirmacion.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdG9cX0NvbmZpcm1hY2lvbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/rodri/source/repos/ProgAvanzada/ProyectoFinal 1/ProyectoFinal 1/Practica2/Views/Producto/_ConfirmarEliminacion.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdG9cX0NvbmZpcm1hckVsaW1pbmFjaW9uLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/rodri/source/repos/ProgAvanzada/ProyectoFinal 1/ProyectoFinal 1/Practica2/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/maube/Documents/GitHub/ProgAvanzada/ProyectoFinal 1/ProyectoFinal 1/Practica2/Views/Shared/Index.cshtml]
+[C:/Users/rodri/source/repos/ProgAvanzada/ProyectoFinal 1/ProyectoFinal 1/Practica2/Views/Shared/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/maube/Documents/GitHub/ProgAvanzada/ProyectoFinal 1/ProyectoFinal 1/Practica2/Views/Shared/_ValidationScriptsPartial.cshtml]
+[C:/Users/rodri/source/repos/ProgAvanzada/ProyectoFinal 1/ProyectoFinal 1/Practica2/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/maube/Documents/GitHub/ProgAvanzada/ProyectoFinal 1/ProyectoFinal 1/Practica2/Views/_ViewImports.cshtml]
+[C:/Users/rodri/source/repos/ProgAvanzada/ProyectoFinal 1/ProyectoFinal 1/Practica2/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/maube/Documents/GitHub/ProgAvanzada/ProyectoFinal 1/ProyectoFinal 1/Practica2/Views/_ViewStart.cshtml]
+[C:/Users/rodri/source/repos/ProgAvanzada/ProyectoFinal 1/ProyectoFinal 1/Practica2/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/maube/Documents/GitHub/ProgAvanzada/ProyectoFinal 1/ProyectoFinal 1/Practica2/Views/Shared/_Layout.cshtml]
+[C:/Users/rodri/source/repos/ProgAvanzada/ProyectoFinal 1/ProyectoFinal 1/Practica2/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-ww5h623m21
