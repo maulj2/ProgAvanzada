@@ -1,0 +1,120 @@
+﻿@model ProyectoFinal.Models.Usuario
+
+@{
+    ViewData["Title"] = "Actualizar";
+}
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"]</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <style>
+        /* Estilos CSS */
+        body {
+            background-color: #f8f9fa;
+            font-family: Arial, sans-serif;
+        }
+
+        .container {
+            margin-top: 50px;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        .btn-regresar {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Actualizar Usuario</h1>
+
+        @using (Html.BeginForm("UsuarioEdit", "Usuarios", FormMethod.Post, new { id = "editForm" }))
+        {
+            @Html.AntiForgeryToken()
+
+            <!-- Campos para editar -->
+            @Html.HiddenFor(model => model.IDUsuario) <!-- Necesario para enviar el ID del usuario -->
+
+            <div class="form-group">
+                @Html.LabelFor(model => model.NombreUsuario)
+                @Html.TextBoxFor(model => model.NombreUsuario, new { @class = "form-control", required = "required" })
+                @Html.ValidationMessageFor(model => model.NombreUsuario, "", new { @class = "text-danger" })
+            </div>
+
+            <div class="form-group">
+                @Html.LabelFor(model => model.Correo)
+                @Html.TextBoxFor(model => model.Correo, new { @class = "form-control", required = "required" })
+                @Html.ValidationMessageFor(model => model.Correo, "", new { @class = "text-danger" })
+            </div>
+
+            <div class="form-group">
+                @Html.LabelFor(model => model.Clave)
+                @Html.PasswordFor(model => model.Clave, new { @class = "form-control", required = "required" })
+                @Html.ValidationMessageFor(model => model.Clave, "", new { @class = "text-danger" })
+            </div>
+
+            <div class="form-group">
+                @Html.LabelFor(model => model.EstadoUsuario)
+                @Html.DropDownListFor(model => model.EstadoUsuario, new SelectList(new[] { "Activo", "Inactivo" }), "-- Seleccione --", new { @class = "form-control", required = "required" })
+                @Html.ValidationMessageFor(model => model.EstadoUsuario, "", new { @class = "text-danger" })
+            </div>
+
+            <div>
+                <!-- Agregar margen superior -->
+                @Html.HiddenFor(model => model.IDUsuario) <!-- Necesario para enviar el ID del producto -->
+
+                <button type="button" id="btnSubmit" class="btn btn-primary">Guardar cambios</button>
+                <!-- Botón de regresar a UsuarioView -->
+                <a href="@Url.Action("UsuarioView", "Usuarios")" class="btn btn-secondary ml-2 btn-regresar">Regresar</a>
+            </div>
+        }
+    </div>
+
+    <!-- Modal de confirmación -->
+    <div class="modal fade" id="confirmationModal" tabindex="-1" role="dialog" aria-labelledby="confirmationModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="confirmationModalLabel">Confirmación</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    ¿Estás seguro de que quieres guardar los cambios?
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
+                    @Html.HiddenFor(model => model.IDUsuario) <!-- Necesario para enviar el ID del USUARIO -->
+
+                    <button type="submit" class="btn btn-primary" id="confirmChanges">Guardar cambios</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.5.4/umd/popper.min.js" integrity="sha384-XOk6N63LWf4vE9J84A+lmnYtbqvtHR8ibYm8z3QLEzDIFebo1SUhgHCtTpg5X2+b" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-qqy5nFvZ6o5WJkGEkfiDwFf2H/wj9uq2twYFt2lHlzbY+6Cqz6nMcy5g0djn5f+8" crossorigin="anonymous"></script>
+
+    <script>
+        $(document).ready(function () {
+            $('#btnSubmit').click(function () {
+                $('#confirmationModal').modal('show');
+            });
+
+            $('#confirmChanges').click(function () {
+                $('#editForm').submit();
+            });
+        });
+    </script>
+</body>
+</html>

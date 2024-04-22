@@ -1,5 +1,4 @@
-﻿
-@{
+﻿@{
     Layout = null;
 }
 
@@ -8,19 +7,57 @@
 <html>
 <head>
     <meta name="viewport" content="width=device-width" />
-    <title>IniciarSesion</title>
+    <title>Iniciar Sesión</title>
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
 
+    <style>
+        /* Estilos CSS personalizados */
+        body {
+            background-color: #f8f9fa;
+        }
+
+        .container {
+            margin-top: 100px;
+        }
+
+        .card-header {
+            text-align: center;
+            font-size: 24px;
+            font-weight: bold;
+            color: #007bff;
+        }
+
+        .card {
+            box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.1);
+        }
+
+        /* Estilos para el footer */
+        footer {
+            background-color: #343a40;
+            color: #ffffff;
+            text-align: center;
+            padding: 20px 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+            footer p {
+                margin: 0;
+            }
+    </style>
 </head>
 <body>
-    <div class="container mt-5 pt-5">
+    <div class="container">
+
+        <h1 class="text-center mb-5">Video Juegos S.A</h1>
 
         <div class="row justify-content-center">
             <div class="col-12 col-xl-4 col-md-6">
 
                 <div class="card">
                     <div class="card-header">
-                        Iniciar Sesion
+                        Iniciar Sesión
                     </div>
                     <div class="card-body">
 
@@ -29,18 +66,17 @@
                             <input class="form-control mb-3" type="text" placeholder="Correo" required name="correo" />
                             <input class="form-control mb-3" type="password" placeholder="Contraseña" required name="clave" />
                             <div class="d-grid gap-2 mb-3">
-                                <button class="btn btn-primary" type="submit">Iniciar Sesion</button>
+                                <button class="btn btn-primary" type="submit">Iniciar Sesión</button>
                             </div>
                             @if (ViewData["Mensaje"] != null)
                             {
-
                                 <div class="form-group">
                                     <div class="alert alert-danger" role="alert">
                                         @ViewData["Mensaje"]
                                     </div>
                                 </div>
                             }
-                            ¿No tienes una cuenta? <a href="@Url.Action("Registrarse","Inicio")"> Registraste!</a>
+                            ¿No tienes una cuenta? <a href="@Url.Action("Registrarse","Inicio")">¡Regístrate!</a>
 
                         </form>
 
@@ -52,6 +88,10 @@
         </div>
 
     </div>
+
+    <footer>
+        <p>Derechos Reservados - Proyecto Estudiantil</p>
+    </footer>
 
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>

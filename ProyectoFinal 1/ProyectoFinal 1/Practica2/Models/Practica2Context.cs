@@ -27,7 +27,7 @@ public partial class _dbContext : DbContext
     {
         modelBuilder.Entity<Usuario>(entity =>
         {
-            entity.HasKey(e => e.IdUsuario).HasName("PK__usuario__5B65BF9794F6A7D1");
+            entity.HasKey(e => e.IDUsuario).HasName("PK__usuario__5B65BF9794F6A7D1");
 
             entity.ToTable("usuario");
 

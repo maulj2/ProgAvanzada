@@ -1,0 +1,36 @@
+﻿@model ProyectoFinal.Models.Usuario
+
+@{
+    ViewData["Title"] = "Eliminar";
+}
+
+<h1>Eliminar</h1>
+
+<h3>¿Estás seguro de que quieres eliminar este usuario?</h3>
+<div>
+    <h4>Usuario</h4>
+    <hr />
+    <dl class="row">
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.NombreUsuario)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.NombreUsuario)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Correo)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Correo)
+        </dd>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.EstadoUsuario)
+        </dd>
+    </dl>
+
+    <form asp-action="UsuarioDel">
+        <input type="hidden" asp-for="IDUsuario" />
+        <input type="submit" value="Eliminar" class="btn btn-danger" /> |
+        <a asp-action="UsuarioView">Volver a la lista</a>
+    </form>
+</div>
